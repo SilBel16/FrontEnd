@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { PortfolioService } from 'src/app/service/portfolio.service';
 
 @Component({
@@ -7,7 +8,7 @@ import { PortfolioService } from 'src/app/service/portfolio.service';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
- miPortfolio:any;
+ /* miPortfolio:any;
   constructor(private datosPortfolio:PortfolioService) { }
 
   ngOnInit(): void {
@@ -15,6 +16,13 @@ export class HeaderComponent implements OnInit {
       console.log(data);
       this.miPortfolio=data;
     });
+  } */
+  constructor (private router: Router) {}
+
+  ngOnInit(): void {
+  }
+    login() {
+      this.router.navigate(['/login'])
   }
 
 }
