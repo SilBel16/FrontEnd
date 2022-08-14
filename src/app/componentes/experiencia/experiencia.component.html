@@ -1,0 +1,16 @@
+<section id="experiencia">
+    <div class="container-fluid">
+      <h2>Experiencia</h2>
+      <div class="divider claro"></div>
+      <h4 class="text-center">{{miPortfolio.actualWork}}</h4>
+      <div class="row">
+      <div *ngFor="let experiencia of experienciaList" class="experiencia col-xs-6 col-sm-6 col-md-4 col-lg-34 text-center">  
+          <p>{{experiencia.name}}</p>
+          <time>{{experiencia.start}} - {{experiencia.end}}</time>
+          </div>  
+      </div>
+      </div>
+    <!--Experiencia Aquí: colocarás toda la información de loslugares donde has trabajado, incluyendo título
+    del puesto, periodo, logo de la empresa, si lo encontrás, y descripción de las actividades realizadas en ese
+    puesto -->                
+    </section>

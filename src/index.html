@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Portfolio</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css" integrity="sha384-/frq1SRXYH/bSyou/HUp/hib7RVN1TawQYja658FEOodR/FQBKVqT9Ol+Oz3Olq5" crossorigin="anonymous">
+  <!-- Add the base CSS plus Solid + Brands styles -->
+  <link href="/your_path_to_version_6_files/css/fontawesome.css" rel="stylesheet">
+  <link href="/your_path_to_version_6_files/css/brands.css" rel="stylesheet">
+  <link href="/your_path_to_version_6_files/css/solid.css" rel="stylesheet">
+  <!-- update existing v5 CSS to use v6 icons and assets -->
+  <link href="/your-path-to-fontawesome/css/v5-font-face.css" rel="stylesheet" />
+</head>
+<body>
+  <app-root></app-root>
+</body>
+</html>
+
+<script>
+
+  //Cambia el estilo del input a visible
+        //toma el valor del texto del parrafo con id "text-acercade"
+        //lo muestra en consola
+        function cambiar_parrafo() {
+          document.getElementById("edit-acercade").style.display="block";
+          let texto = document.getElementById("text-acercade").innerText;
+          console.log(texto);
+        };
+  
+        function myFunction2(valor) {
+          document.getElementById("text-acercade").innerText=valor;
+        };
+  
+        function logMessage(message) {
+          console.log(message + "<br>");
+        }
+  
+        //controlo si presiono un enter
+      let textarea=document.getElementById("edit-acercade")
+      textarea.addEventListener('keyup', (e) => {
+        logMessage('Key "${e.key}" released [event: keyup]');
+        if (e.key=="Enter") {
+          document.getElementById("edit-acercade").style.display="none"
+        }
+      });
+  
+      //carga el contenido de un archivo de texto 
+      //y lo muestra en el parrafo
+  
+      function showFile(input) {
+        let file = input.file[0];
+        alert('File name: $(file.name)'); //e. g my.png
+        alert('Last modified: $(file.lastModified)'); //e. g 1552030408824
+      
+        let reader = new FileReader();
+        reader.readAsText(file);
+        reader.onload = function() {
+          console.log(reader.result);
+          document.getElementById("text-acercade").innerText=reader.result;
+        };
+        reader.onerror = function () {
+          console.log(reader.error);
+        };
+      }
+  
+      </script>
