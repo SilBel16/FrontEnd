@@ -2,11 +2,23 @@ export class persona{
     id?: number; //Dato no necesario, es automático
     nombre: string;
     apellido: string;
-    img: string;
+    profileImg: string;
+    position: string;
+    aboutMe: string;
+    mail: string;
+    phone: string;
+    city: string;
+    country: string;
 
-    constructor(nombre: string, apellido: string, img: string) {
+    constructor(nombre: string, apellido: string, profileImg: string, position: string, aboutMe: string, mail: string, phone: string, city: string, country: string) {
         this.nombre = nombre; //inicializo los atributos
         this.apellido = apellido;
-        this.img = img;
+        this.profileImg = profileImg;
+        this.position = position;
+        this.aboutMe = aboutMe;
+        this.mail = mail;
+        this.phone = phone;
+        this.city = city;
+        this.country = country;       
     }
 }
