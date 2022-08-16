@@ -12,7 +12,7 @@ export class AcercaDeComponent implements OnInit {
   /* miPortfolio:any;
   constructor(private datosPortfolio:PortfolioService) { } */
 
-  persona: persona = new persona("", "", "","", "", "", "", "", "");
+  persona: persona = new persona("", "", "","", "", "");
   constructor (public personaService:PersonaService) {}
 
   ngOnInit(): void {
