@@ -3,14 +3,22 @@
     <h2>Educación</h2>
     <div class="divider oscuro"></div>
     <div class="row">
-            <div *ngFor="let educacion of educacionList" align="center" class="estudio col-xs-6 col-sm-6 col-md-2 col-lg-2">
-              <a href="{{educacion.url}}" target="_blank">
-              <img class="img-fluid col-xs-6 col-sm-6 col-md-10 col-lg-10" [src]="educacion.img" alt="logo Argentina programa">
+            <div *ngFor="let Educacion of edu" align="center" class="estudio col-xs-6 col-sm-6 col-md-2 col-lg-2">
+              <a href="{{Educacion.urlEdu}}" target="_blank"> <!--URL EN BD-->
+              <img class="img-fluid col-xs-6 col-sm-6 col-md-10 col-lg-10" [src]="Educacion.urlImgEdu" alt="logo educación">
               </a>
               <div class="estudio col-xs-6 col-sm-6 col-md-10 col-lg-10">
-              <p>{{educacion.title}}<br>{{educacion.end}}</p> 
+              <p><br>{{Educacion.nombreEdu}}</p> 
+              <p>{{Educacion.descripcionEdu}}</p>
+              <p>{{Educacion.inicioEdu}} {{Educacion.finEdu}}</p>
+              <div *ngIf="isLogged"><button class="button" routerLink="/editedu/{{Educacion.id}}"><i class="fa-solid fa-pen-to-square"></i></button>
+                <button class="button" (click)="delete(Educacion.id)"><i class="fa-solid fa-ban"></i></button>
+                </div>
             </div>
             </div> 
+            <div>
+              <button type="button" class="button" routerLink="/nuevaedu" *ngIf="isLogged">Agregar Educación</button>
+            </div>
     </div>
     </div>
     </section>
