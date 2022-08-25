@@ -4,13 +4,13 @@
     <div class="divider oscuro"></div>
     <div class="row">
             <div *ngFor="let Educacion of edu" align="center" class="estudio col-xs-6 col-sm-6 col-md-2 col-lg-2">
-              <a href="{{Educacion.urlEdu}}" target="_blank"> <!--URL EN BD-->
+              <a href="{{Educacion.urlEdu}}" target="_blank"> 
               <img class="img-fluid col-xs-6 col-sm-6 col-md-10 col-lg-10" [src]="Educacion.urlImgEdu" alt="logo educación">
               </a>
               <div class="estudio col-xs-6 col-sm-6 col-md-10 col-lg-10">
-              <p><br>{{Educacion.nombreEdu}}</p> 
+           <!--  <p>{{Educacion.nombreEdu}}</p> -->  
               <p>{{Educacion.descripcionEdu}}</p>
-              <p>{{Educacion.inicioEdu}} {{Educacion.finEdu}}</p>
+              <p>{{Educacion.finEdu}}</p>
               <div *ngIf="isLogged"><button class="button" routerLink="/editedu/{{Educacion.id}}"><i class="fa-solid fa-pen-to-square"></i></button>
                 <button class="button" (click)="delete(Educacion.id)"><i class="fa-solid fa-ban"></i></button>
                 </div>

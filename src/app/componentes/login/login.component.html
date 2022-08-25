@@ -2,12 +2,7 @@
 <!-- Pills navs -->
 <ul class="nav nav-pills nav-justified mb-3" id="ex1" role="tablist">
   <li class="nav-item" role="presentation">
-    <a class="nav-link active" id="tab-login" data-mdb-toggle="pill" href="#pills-login" role="tab"
-      aria-controls="pills-login" aria-selected="true">Iniciar sesión</a>
-  </li>
-  <li class="nav-item" role="presentation">
-    <a class="nav-link" id="tab-register" data-mdb-toggle="pill" href="#pills-register" role="tab"
-      aria-controls="pills-register" aria-selected="false">Registrarse</a>
+    <p>INICIAR SESIÓN</p>
   </li>
 </ul>
 <!-- Pills navs -->
@@ -18,24 +13,18 @@
 
       <!-- Email input -->
       <div class="form-outline mb-4">
-        <input type="email" id="nombreUsuario" name="nombreUsuario" class="form-control" [(ngModel)]="nombreUsuario" requiered />
-        <label class="form-label" for="nombreUsuario">Usuario</label>
+        <input type="email" id="nombreUsuario" name="nombreUsuario" class="form-control" placeholder="Usuario" [(ngModel)]="nombreUsuario" requiered />
+        <label class="form-label" for="nombreUsuario"></label>
       </div>
 
       <!-- Password input -->
       <div class="form-outline mb-4">
-        <input type="password" id="password" name="password" class="form-control" [(ngModel)]="password" requiered />
-        <label class="form-label" for="password">Password</label>
+        <input type="password" id="password" name="password" class="form-control" placeholder="Contraseña" [(ngModel)]="password" requiered />
+        <label class="form-label" for="password"></label>
       </div>
 
-      
-        <div class="col-md-6 d-flex justify-content-center">
-          <!-- Simple link -->
-          <a href="#!">Olvidó su password?</a>
-        </div>
-
       <!-- Submit button -->
-      <button type="submit" class="btn btn-primary btn-block mb-4">Login</button>
+      <button type="submit" class="button mb-4">INGRESAR</button>
 
     </form>
 </div>
