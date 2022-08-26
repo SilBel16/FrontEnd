@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="row">
+        <div>
+            <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
+                <div class="form-group">
+                    <label for="urlImgPro">Hard Skill</label>
+                    <input type="text" class="form-control" id="nombreHab" name="nombreHab" [(ngModel)]="nombreHab" requiered>
+                </div>
+                <div class="form-group">
+                    <label for="nombrePro">Ícono skill</label>
+                    <input type="text" class="form-control" id="iconHab" name="nombrePro" [(ngModel)]="iconHab" requiered>
+                </div>
+                <div class="form-group">
+                    <label for="descripcionPro">Porcentaje de conocimiento</label>
+                    <input type="text" class="form-control" id="descripcionPro" name="descripcionPro" [(ngModel)]="nivelHab" requiered>
+                </div>               
+                <div class="form-group">
+                    <label for="urlEdu"> Clasificación según porcentaje (avanzado, intermedio, básico) </label>
+                    <input type="text" class="form-control" id="etiquetaHab" name="etiquetaHab" [(ngModel)]="etiquetaHab" requiered>
+                </div>
+                <button class="button">Agregar Hard Skill</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+
