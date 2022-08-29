@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="row">
+        <div>
+            <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
+                <div class="form-group">
+                    <label for="urlImgPro">Soft Skill</label>
+                    <input type="text" class="form-control" id="nombreHab" name="nombreHab" [(ngModel)]="nombreHab" requiered>
+                </div>
+                <div class="form-group">
+                    <label for="nombrePro">Ícono skill</label>
+                    <input type="text" class="form-control" id="iconHab" name="nombreHab" [(ngModel)]="iconHab" requiered>
+                </div>
+                <button class="button">Agregar Soft Skill</button>
+            </form>
+        </div>
+    </div>
+</div>

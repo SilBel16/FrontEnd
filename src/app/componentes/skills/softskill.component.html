@@ -1,0 +1,10 @@
+  
+     <div *ngFor="let Softskill of ssk" class="softskills">
+  <h5 class="softskills"><img [src]="Softskill.iconHab"> {{Softskill.nombreHab}}</h5>    
+  <div *ngIf="isLogged"><button class="button" routerLink="/editsoftskill/{{Softskill.id}}"><i class="fa-solid fa-pen-to-square"></i></button>
+    <button class="button" (click)="delete(Softskill.id)"><i class="fa-solid fa-ban"></i></button>
+    </div>
+</div>
+<div>
+  <button type="button" class="button" routerLink="/nuevasoftskill" *ngIf="isLogged">Agregar SoftSkill</button>
+</div> 

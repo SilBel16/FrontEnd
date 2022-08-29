@@ -3,16 +3,23 @@
       <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
         <img id="logo-AP" class="img-fluid" src="../../../assets/AP logo.jpg"
         alt="Logo Argentina Programa" width="100px"></div>
-      <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3"><span>#YoProgramo</span></div>
-      <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"><a class="contact" href="" target="_blank"><i class="fa-brands fa-github"></i></a></div>
-      <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"><a class="contact" href="" target="_blank"><i class="fa-brands fa-linkedin"></i></a></div>
-      <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"><a class="contact" href="" target="_blank"><i class="fa-brands fa-codepen"></i></a></div>
-      <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"><a class="contact" href="" target="_blank"><i class="fa-brands fa-instagram"></i></a></div>
-      <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"><a class="contact" href="" target="_blank"><i class="fa-brands fa-twitter"></i></a></div>          
-      <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"><a class="contact" href="" target="_blank"><i class="fa-brands fa-facebook"></i></a></div>
-      <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"><button class="login button" (click)="login()">Login</button></div>
+      <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"><span>#YoProgramo</span></div>
+      <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+        <button type="button" class="button agregar" routerLink="/nuevared" *ngIf="isLogged">Agregar Red Social</button>
+      </div>
+      <div *ngFor="let Redes of red" class="redes" class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+        <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"><a class="contact" href={{Redes.urlRed}} target="_blank"><i class={{Redes.iconRed}}></i></a></div>    
+        <div *ngIf="isLogged"><button class="buttonEDH" routerLink="/editred/{{Redes.id}}"><i class="fa-solid fa-pen-to-square"></i></button>
+          <button class="buttonEDH"  (click)="delete(Redes.id)"><i class="fa-solid fa-ban"></i></button>
+          </div>
+      </div> 
+      <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+        <button class="login button" (click)="login()" *ngIf="!isLogged">Login</button>
+        <button class="login button" (click)="onLogout()"*ngIf="isLogged">Cerrar Sesión</button>
+      </div>
     </div>
   </header>
+ 
   <nav class="navbar navbar-expand-sm">
     <div class="container-fluid">
       <ul class="navbar-nav">
