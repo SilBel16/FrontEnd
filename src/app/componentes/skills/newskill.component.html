@@ -3,19 +3,19 @@
         <div>
             <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
                 <div class="form-group">
-                    <label for="urlImgPro">Hard Skill</label>
+                    <label for="nombreHab">Hard Skill</label>
                     <input type="text" class="form-control" id="nombreHab" name="nombreHab" [(ngModel)]="nombreHab" requiered>
                 </div>
                 <div class="form-group">
-                    <label for="nombrePro">Ícono skill</label>
-                    <input type="text" class="form-control" id="iconHab" name="nombreHab" [(ngModel)]="iconHab" requiered>
+                    <label for="iconHab">Ícono skill</label>
+                    <input type="text" class="form-control" id="iconHab" name="iconHab" [(ngModel)]="iconHab" requiered>
                 </div>
                 <div class="form-group">
-                    <label for="descripcionPro">Porcentaje de conocimiento</label>
-                    <input type="text" class="form-control" id="descripcionHab" name="descripcionHab" [(ngModel)]="nivelHab" requiered>
+                    <label for="nivelHab">Porcentaje de conocimiento</label>
+                    <input type="text" class="form-control" id="nivelHab" name="nivelHab" [(ngModel)]="nivelHab" requiered>
                 </div>               
                 <div class="form-group">
-                    <label for="urlEdu"> Clasificación según porcentaje (avanzado, intermedio, básico) </label>
+                    <label for="etiquetaHab"> Clasificación según porcentaje (avanzado, intermedio, básico) </label>
                     <input type="text" class="form-control" id="etiquetaHab" name="etiquetaHab" [(ngModel)]="etiquetaHab" requiered>
                 </div>
                 <button class="button">Agregar Hard Skill</button>

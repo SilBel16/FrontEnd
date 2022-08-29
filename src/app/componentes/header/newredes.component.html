@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="row">
+        <div>
+            <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
+                <div class="form-group">
+                    <label for="iconRed">Ícono red social</label>
+                    <input type="text" class="form-control" id="iconRed" name="iconRed" [(ngModel)]="iconRed" requiered>
+                </div>
+                <div class="form-group">
+                    <label for="nombreRed">Nombre red social</label>
+                    <input type="text" class="form-control" id="nombreRed" name="nombreRed" [(ngModel)]="nombreRed" requiered>
+                </div>
+                <div class="form-group">
+                    <label for="descripcionPro">Url perfil Red social</label>
+                    <input type="text" class="form-control" id="descripcionRed" name="descripcionHab" [(ngModel)]="urlRed" requiered>
+                </div>               
+                <button class="button">Agregar Red social</button>
+            </form>
+        </div>
+    </div>
+</div>
