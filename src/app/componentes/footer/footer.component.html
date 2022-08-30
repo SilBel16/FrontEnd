@@ -1,16 +1,16 @@
 <footer id="contacto" class="container-fluid">
-  <div class="row">
+  <div *ngFor="let Info of inf" class="row">
     <div class="col-sm-1 text-center">
       <i class="fa-solid fa-angles-up contact-icon"></i><a class="contact-a" href="#header">Inicio</a>
     </div>
     <div class="col-sm-4 text-center">
-      <i class="fa-solid fa-envelope contact-icon"></i><a class="contact-a" href="mailto:{{persona.mail}}">{{persona.mail}}</a>
+      <i class="fa-solid fa-envelope contact-icon"></i><a class="contact-a" href="mailto:{{Info.mail}}">{{Info.mail}}</a>
     </div>
     <div class="col-sm-3 text-center">
-      <i class="fa-brands fa-whatsapp"></i><p>{{persona.phone}}</p>
+      <i class="fa-brands fa-whatsapp"></i><p>{{Info.phone}}</p>
     </div>
     <div class="col-sm-4 text-center">
-      <i class="fa-solid fa-map-location-dot contact-icon"></i><p>{{persona.city}}, {{persona.country}}</p>
+      <i class="fa-solid fa-map-location-dot contact-icon"></i><p>{{Info.city}}, {{Info.country}}</p>
     </div>
   </div>
 </footer>

@@ -29,6 +29,8 @@ import { NewsoftskillComponent } from './componentes/skills/newsoftskill.compone
 import { EditsoftskillComponent } from './componentes/skills/editsoftskill.component';
 import { NewredesComponent } from './componentes/header/newredes.component';
 import { EditredesComponent } from './componentes/header/editredes.component';
+import { NewinfoComponent } from './componentes/acerca-de/newinfo.component';
+import { EditinfoComponent } from './componentes/acerca-de/editinfo.component';
 
 @NgModule({
   declarations: [
@@ -54,7 +56,9 @@ import { EditredesComponent } from './componentes/header/editredes.component';
     NewsoftskillComponent,
     EditsoftskillComponent,
     NewredesComponent,
-    EditredesComponent
+    EditredesComponent,
+    NewinfoComponent,
+    EditinfoComponent
   ],
   imports: [
     BrowserModule,
