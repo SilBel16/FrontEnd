@@ -1,0 +1,51 @@
+<div class="container">
+    <div class="row">
+        <div>
+            <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+                <div class="form-group">
+                    <label for="nombre">Nombre </label>
+                    <input type="text" class="form-control" id="nombre" name="nombre" [(ngModel)]="inf.nombre" requiered>
+                </div>
+                <div class="form-group">
+                    <label for="apellido">apellido</label>
+                    <input type="text" class="form-control" id="apellido" name="apellido" [(ngModel)]="inf.apellido" requiered>
+                </div>
+                <div class="form-group">
+                    <label for="profileImg">profileImg</label>
+                    <input type="text" class="form-control" id="profileImg" name="inicioEdu" [(ngModel)]="inf.profileImg" requiered>
+                </div>
+                <div class="form-group">
+                    <label for="position">position</label>
+                    <input type="text" class="form-control" id="position" name="position" [(ngModel)]="inf.position" requiered>
+                </div>
+                <div class="form-group">
+                    <label for="aboutMe">aboutMe</label>
+                    <input type="text" class="form-control" id="aboutMe" name="aboutMe" [(ngModel)]="inf.aboutMe" requiered>
+                </div>
+                <div class="form-group">
+                    <label for="cvFile">cvFile</label>
+                    <input type="text" class="form-control" id="cvFile" name="cvFile" [(ngModel)]="inf.cvFile" requiered>
+                </div>
+                <div class="form-group">
+                    <label for="mail">mail </label>
+                    <input type="text" class="form-control" id="mail" name="mail" [(ngModel)]="inf.mail" requiered>
+                </div>
+                <div class="form-group">
+                    <label for="phone">phone</label>
+                    <input type="text" class="form-control" id="phone" name="phone" [(ngModel)]="inf.phone" requiered>
+                </div>
+                <div class="form-group">
+                    <label for="city">city</label>
+                    <input type="text" class="form-control" id="city" name="city" [(ngModel)]="inf.city" requiered>
+                </div>
+                <div class="form-group">
+                    <label for="country">country</label>
+                    <input type="text" class="form-control" id="country" name="country" [(ngModel)]="inf.country" requiered>
+                </div>
+                <button class="button">Editar información</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+

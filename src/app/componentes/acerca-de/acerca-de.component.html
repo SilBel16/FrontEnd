@@ -2,27 +2,24 @@
   <div class="container-fluid">
     <h2>Acerca de mi</h2>
     <div class="divider oscuro"></div>
-      <div class="row">
-        <!-- <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1 text-left align-top btn-edit" onclick="cambiar_parrafo()">
-          <a href="#" class="btn-left">
-            <i class="fa fa-edit"></i>
-          </a>
-        </div> -->
-        <div class="col-xs-12 col-sm-7 col-md-7 col-lg-7 text-center align-self-center">
-          <h1>{{persona.nombre}} {{persona.apellido}}</h1> 
-          <h2><em>{{persona.position}}</em></h2>
+      <div *ngFor="let Info of inf" class="row">
+        <div class="col text-center align-self-center">
+          <h1>{{Info.nombre}} {{Info.apellido}}</h1> 
+          <h2><em>{{Info.position}}</em></h2>
           <div>
-            <p id="text-acercade">{{persona.aboutMe}}</p>
+            <p id="text-acercade">{{Info.aboutMe}}</p>
           </div>
-          <!-- <div>
-            <input id="edit-acercade" type="text" oninput="myFunction2(this.value)" style="display:none">
-          </div> -->
-        <!--  <input type="file" id="file1" onchange="showfile(this)"> -->
-          <a download={{persona.cvFile}} href={{persona.cvFile}}><button class="download-cv button">Download CV</button></a>
+          <a download={{Info.cvFile}} href={{Info.cvFile}}><button class="download-cv button">Download CV</button></a>
         </div>
-        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-          <img class="img-fluid" id="foto_perfil" src="{{persona.profileImg}}" alt="foto de perfil Silvina">
+          <div class="col">
+          <img class="img-fluid col" id="foto_perfil" src="{{Info.profileImg}}" alt="foto de perfil">
         </div>
+ <!--    
+      <div class="col">
+        <button type="button" class="button" routerLink="/nuevainfo" *ngIf="isLogged">Agregar Información</button>
+      </div> --> 
+      <div *ngIf="isLogged"><button class="button" routerLink="/editinfo/{{Info.id}}"><i class="fa-solid fa-pen-to-square"></i></button>
+      </div>
       </div>
   </div>              
   </section>
