@@ -7,7 +7,7 @@ import { Info } from '../model/info';
   providedIn: 'root'
 })
 export class InfoService {
-  infoURL = 'http://localhost:8080/info/';
+  infoURL = 'https://backendslb.herokuapp.com/info/';
 
   constructor(private httpClient: HttpClient) { }
 

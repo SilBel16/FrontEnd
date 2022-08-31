@@ -7,7 +7,7 @@ import { Redes } from '../model/redes';
   providedIn: 'root'
 })
 export class RedesService {
-  redURL = 'http://localhost:8080/redes/';
+  redURL = 'https://backendslb.herokuapp.com/redes/';
 
   constructor(private httpClient: HttpClient) { }
 
