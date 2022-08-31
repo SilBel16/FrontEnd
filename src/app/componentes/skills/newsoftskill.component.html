@@ -1,16 +1,17 @@
 <div class="container">
+    <h3>Agregar Hard skill</h3>
     <div class="row">
         <div>
             <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
                 <div class="form-group">
-                    <label for="urlImgPro">Soft Skill</label>
-                    <input type="text" class="form-control" id="nombreHab" name="nombreHab" [(ngModel)]="nombreHab" requiered>
+                    <label for="nombreHab"></label>
+                    <input type="text" placeholder="Soft Skill" class="form-control" id="nombreHab" name="nombreHab" [(ngModel)]="nombreHab" requiered>
                 </div>
                 <div class="form-group">
-                    <label for="nombrePro">Ícono skill</label>
-                    <input type="text" class="form-control" id="iconHab" name="nombreHab" [(ngModel)]="iconHab" requiered>
+                    <label for="iconHab"></label>
+                    <input type="text" placeholder="URL del ícono skill" class="form-control" id="iconHab" name="iconHab" [(ngModel)]="iconHab" requiered>
                 </div>
-                <button class="button">Agregar Soft Skill</button>
+                <button class="button">Agregar</button>
             </form>
         </div>
     </div>

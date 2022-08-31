@@ -1,24 +1,25 @@
 <div class="container">
+    <h3>Editar Hard Skill</h3>
     <div class="row">
         <div>
             <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
                 <div class="form-group">
-                    <label for="urlImgPro">Hard Skill</label>
+                    <label for="nombreHab">Hard Skill</label>
                     <input type="text" class="form-control" id="nombreHab" name="nombreHab" [(ngModel)]="hab.nombreHab" requiered>
                 </div>
                 <div class="form-group">
-                    <label for="nombrePro">Ícono skill</label>
-                    <input type="text" class="form-control" id="iconHab" name="nombrePro" [(ngModel)]="hab.iconHab" requiered>
+                    <label for="iconHab">URL del ícono de la hard skill</label>
+                    <input type="text" class="form-control" id="iconHab" name="iconHab" [(ngModel)]="hab.iconHab" requiered>
                 </div>
                 <div class="form-group">
-                    <label for="descripcionPro">Porcentaje de conocimiento</label>
-                    <input type="text" class="form-control" id="descripcionPro" name="descripcionPro" [(ngModel)]="hab.nivelHab" requiered>
+                    <label for="nivelHab">Número del porcentaje de conocimiento</label>
+                    <input type="text" class="form-control" id="nivelHab" name="nivelHab" [(ngModel)]="hab.nivelHab" requiered>
                 </div>               
                 <div class="form-group">
-                    <label for="urlEdu"> Clasificación según porcentaje (avanzado, intermedio, básico) </label>
+                    <label for="etiquetaHab">Clasificación según porcentaje (Avanzado, Intermedio, Básico)</label>
                     <input type="text" class="form-control" id="etiquetaHab" name="etiquetaHab" [(ngModel)]="hab.etiquetaHab" requiered>
                 </div>
-                <button class="button">Editar Hard Skill</button>
+                <button class="button">Editar</button>
             </form>
         </div>
     </div>

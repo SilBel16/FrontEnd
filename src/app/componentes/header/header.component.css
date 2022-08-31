@@ -7,3 +7,13 @@
 .agregar {
     font-size: 0.75em;
 }
+
+@media only screen and (max-width: 815px) {
+    nav {
+        position: static;
+    }
+
+    .buttonEDH {
+        font-size: 0.5em;
+    }
+}

@@ -1,9 +1,10 @@
 <div class="container">
+    <h3>Editar Red social</h3>
     <div class="row">
         <div>
             <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
                 <div class="form-group">
-                    <label for="iconRed">Ícono red social</label>
+                    <label for="iconRed">URL del ícono red social</label>
                     <input type="text" class="form-control" id="iconRed" name="iconRed" [(ngModel)]="red.iconRed" requiered>
                 </div>
                 <div class="form-group">
@@ -11,10 +12,10 @@
                     <input type="text" class="form-control" id="nombreRed" name="nombreRed" [(ngModel)]="red.nombreRed" requiered>
                 </div>
                 <div class="form-group">
-                    <label for="descripcionPro">Url perfil Red social</label>
+                    <label for="descripcionPro">URL perfil Red social</label>
                     <input type="text" class="form-control" id="descripcionRed" name="descripcionHab" [(ngModel)]="red.urlRed" requiered>
                 </div>               
-                <button class="button">Editar Red social</button>
+                <button class="button">Editar</button>
             </form>
         </div>
     </div>

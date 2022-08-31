@@ -3,7 +3,8 @@
     <h2>Acerca de mi</h2>
     <div class="divider oscuro"></div>
       <div *ngFor="let Info of inf" class="row">
-        <div class="col text-center align-self-center">
+        <div class="col-1"></div>
+        <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 text-center align-self-center">
           <h1>{{Info.nombre}} {{Info.apellido}}</h1> 
           <h2><em>{{Info.position}}</em></h2>
           <div>
@@ -11,14 +12,14 @@
           </div>
           <a download={{Info.cvFile}} href={{Info.cvFile}}><button class="download-cv button">Download CV</button></a>
         </div>
-          <div class="col">
-          <img class="img-fluid col" id="foto_perfil" src="{{Info.profileImg}}" alt="foto de perfil">
+          <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 text-center align-self-center">
+          <img class="img-fluid" id="foto_perfil" src="{{Info.profileImg}}" alt="foto de perfil">
         </div>
  <!--    
       <div class="col">
         <button type="button" class="button" routerLink="/nuevainfo" *ngIf="isLogged">Agregar Información</button>
       </div> --> 
-      <div *ngIf="isLogged"><button class="button" routerLink="/editinfo/{{Info.id}}"><i class="fa-solid fa-pen-to-square"></i></button>
+      <div *ngIf="isLogged"><button class="button edit" routerLink="/editinfo/{{Info.id}}"><i class="fa-solid fa-pen-to-square"></i></button>
       </div>
       </div>
   </div>              

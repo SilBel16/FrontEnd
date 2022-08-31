@@ -39,7 +39,7 @@ delete(id?: number){
       data => {
         this.cargarProyecto();
       }, err => {
-        alert("No se pudo borrar la educacion");
+        alert("No se pudo borrar el proyecto");
       }
     )
   }

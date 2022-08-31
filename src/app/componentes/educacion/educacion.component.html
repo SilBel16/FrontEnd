@@ -9,8 +9,9 @@
               </a>
               <div class="estudio col-xs-6 col-sm-6 col-md-10 col-lg-10">
            <!--  <p>{{Educacion.nombreEdu}}</p> -->  
-              <p>{{Educacion.descripcionEdu}}</p>
-              <p>{{Educacion.finEdu}}</p>
+              <p class="descripcionEdu">{{Educacion.descripcionEdu}}</p>
+              <p class="fechas">{{Educacion.inicioEdu}}</p>
+              <p class="fechas">{{Educacion.finEdu}}</p>
               <div *ngIf="isLogged"><button class="button" routerLink="/editedu/{{Educacion.id}}"><i class="fa-solid fa-pen-to-square"></i></button>
                 <button class="button" (click)="delete(Educacion.id)"><i class="fa-solid fa-ban"></i></button>
                 </div>

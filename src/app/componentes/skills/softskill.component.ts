@@ -36,7 +36,7 @@ delete(id?: number){
       data => {
         this.cargarSoftskill();
       }, err => {
-        alert("No se pudo borrar la educacion");
+        alert("No se pudo borrar la soft skill");
       }
     )
   }
