@@ -1,3 +1,14 @@
-.button {
-    margin-top: 5px;
+button {
+    margin: 5px;
 }
+
+h3 {
+    text-align: center;
+    margin-top: 5px;
+    text-transform: uppercase;
+}
+
+form {
+    margin-top: -10px;
+}
+

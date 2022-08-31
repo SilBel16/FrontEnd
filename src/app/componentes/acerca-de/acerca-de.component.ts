@@ -37,7 +37,7 @@ delete(id?: number){
       data => {
         this.cargarInfo();
       }, err => {
-        alert("No se pudo borrar la educacion");
+        alert("No se pudo borrar la información");
       }
     )
   }

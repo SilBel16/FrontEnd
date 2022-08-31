@@ -4,3 +4,16 @@ img {
     height: 6em;
     margin-bottom: 1em;
 }
+
+.descripcionEdu {
+    text-transform: uppercase;
+}
+
+.fechas {
+    font-size: 0.80em;
+    margin-top: -15px;
+}
+
+button {
+    margin: 3px;
+}

@@ -1,3 +1,17 @@
-.button {
+button {
+    margin: 5px;
+}
+
+h3 {
+    text-align: center;
+    margin-top: 5px;
+    text-transform: uppercase;
+}
+
+form {
+    margin-top: -10px;
+}
+
+input {
     margin: 3px;
 }

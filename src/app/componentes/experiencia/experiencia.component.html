@@ -4,17 +4,17 @@
       <div class="divider claro"></div>
       <div class="row">
         
-      <div *ngFor="let Experiencia of expe" class="experiencia col-xs-6 col-sm-6 col-md-4 col-lg-34 text-center">  
+      <div *ngFor="let Experiencia of expe" class="experiencia col-xs-6 col-sm-6 col-md-4 col-lg-4 text-center">  
         <h5 class="text-center">{{Experiencia.descripcionE}}</h5>
           <p>{{Experiencia.nombreE}}</p>
           <time>{{Experiencia.inicioE}} - {{Experiencia.finE}}</time>         
-          <div *ngIf="isLogged"><button class="button" routerLink="/editexp/{{Experiencia.id}}"><i class="fa-solid fa-pen-to-square"></i></button>
-          <button class="button" (click)="delete(Experiencia.id)"><i class="fa-solid fa-ban"></i></button>
+          <div *ngIf="isLogged"><button class="button ED" routerLink="/editexp/{{Experiencia.id}}"><i class="fa-solid fa-pen-to-square"></i></button>
+          <button class="button ED" (click)="delete(Experiencia.id)"><i class="fa-solid fa-ban"></i></button>
           </div>
       </div>  
       </div>
       <div>
-        <button type="button" class="button" routerLink="/nuevaexp" *ngIf="isLogged">Agregar Experiencia</button>
+        <button type="button" class="button agregar" routerLink="/nuevaexp" *ngIf="isLogged">Agregar Experiencia</button>
       </div>
     </div>
     <!--Experiencia Aquí: colocarás toda la información de loslugares donde has trabajado, incluyendo título

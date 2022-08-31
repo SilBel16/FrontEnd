@@ -1,7 +1,5 @@
-h4 {
+h5 {
     margin-top: -1em;
-    margin-bottom: 1em;
-    text-transform: uppercase;
 }
 
 p {
@@ -14,4 +12,18 @@ p {
 
 .row {
     margin-bottom: 1em;
+}
+
+button {
+    margin: 3px;
+}
+
+@media only screen and (max-width: 815px) {
+    .ED {
+        margin-bottom: 20px;
+    }
+
+    .agregar {
+        margin-top: -10px;
+    }
 }

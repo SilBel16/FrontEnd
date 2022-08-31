@@ -1,4 +1,5 @@
 <div class="container" *ngIf="expLab">
+    <h3>Editar experiencia laboral</h3>
     <div class="row">
         <div>
             <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
@@ -7,18 +8,18 @@
                     <input type="text" class="form-control" id="nombreE" name="nombreE" [(ngModel)]="expLab.nombreE" requiered>
                 </div>
                 <div class="form-group">
-                    <label for="descripcionE">Descripción Puesto</label>
+                    <label for="descripcionE">Descripción puesto laboral</label>
                     <input type="text" class="form-control" id="descripcionE" name="descripcionE" [(ngModel)]="expLab.descripcionE" requiered>
                 </div>
                 <div class="form-group">
-                    <label for="inicioE">Ingreso</label>
+                    <label for="inicioE">Fecha de Ingreso</label>
                     <input type="text" class="form-control" id="inicioE" name="inicioE" [(ngModel)]="expLab.inicioE" requiered>
                 </div>
                 <div class="form-group">
-                    <label for="finE">Egreso</label>
+                    <label for="finE">Fecha de egreso</label>
                     <input type="text" class="form-control" id="finE" name="finE" [(ngModel)]="expLab.finE" requiered>
                 </div>
-                <button class="button">Editar experiencia laboral</button>
+                <button class="button">Editar</button>
             </form>
         </div>
     </div>

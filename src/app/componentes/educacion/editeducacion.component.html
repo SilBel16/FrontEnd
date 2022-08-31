@@ -1,4 +1,5 @@
 <div class="container">
+    <h3>Editar educación</h3>
     <div class="row">
         <div>
             <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
@@ -11,19 +12,19 @@
                     <input type="text" class="form-control" id="descripcionEdu" name="descripcionEdu" [(ngModel)]="edu.descripcionEdu" requiered>
                 </div>
                 <div class="form-group">
-                    <label for="inicioEdu">Ingreso</label>
+                    <label for="inicioEdu">Fecha de ingreso</label>
                     <input type="text" class="form-control" id="inicioEdu" name="inicioEdu" [(ngModel)]="edu.inicioEdu" requiered>
                 </div>
                 <div class="form-group">
-                    <label for="finEdu">Egreso</label>
+                    <label for="finEdu">Fecha de egreso</label>
                     <input type="text" class="form-control" id="finEdu" name="finEdu" [(ngModel)]="edu.finEdu" requiered>
                 </div>
                 <div class="form-group">
-                    <label for="urlImgEdu">url Imagen Institución</label>
+                    <label for="urlImgEdu">URL Imagen Institución</label>
                     <input type="text" class="form-control" id="urlImgEdu" name="urlImgEdu" [(ngModel)]="edu.urlImgEdu" requiered>
                 </div>
                 <div class="form-group">
-                    <label for="urlEdu">url Institución</label>
+                    <label for="urlEdu">URL Institucional</label>
                     <input type="text" class="form-control" id="urlEdu" name="urlEdu" [(ngModel)]="edu.urlEdu" requiered>
                 </div>
                 <button class="button">Editar educación</button>

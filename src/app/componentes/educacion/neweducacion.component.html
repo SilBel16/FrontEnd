@@ -1,32 +1,33 @@
 <div class="container">
+    <h3>Agregar Educación</h3>
     <div class="row">
         <div>
             <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
                 <div class="form-group">
-                    <label for="nombreEdu">Nombre Institución</label>
-                    <input type="text" class="form-control" id="nombreEdu" name="nombreEdu" [(ngModel)]="nombreEdu" requiered>
+                    <label for="nombreEdu"></label>
+                    <input type="text" placeholder="Nombre Institución" class="form-control" id="nombreEdu" name="nombreEdu" [(ngModel)]="nombreEdu" requiered>
                 </div>
                 <div class="form-group">
-                    <label for="descripcionEdu">Título</label>
-                    <input type="text" class="form-control" id="descripcionEdu" name="descripcionEdu" [(ngModel)]="descripcionEdu" requiered>
+                    <label for="descripcionEdu"></label>
+                    <input type="text" placeholder="Título" class="form-control" id="descripcionEdu" name="descripcionEdu" [(ngModel)]="descripcionEdu" requiered>
                 </div>
                 <div class="form-group">
-                    <label for="inicioEdu">Ingreso</label>
-                    <input type="text" class="form-control" id="inicioEdu" name="inicioEdu" [(ngModel)]="inicioEdu" requiered>
+                    <label for="inicioEdu"></label>
+                    <input type="text" placeholder="Fecha de ingreso" class="form-control" id="inicioEdu" name="inicioEdu" [(ngModel)]="inicioEdu" requiered>
                 </div>
                 <div class="form-group">
-                    <label for="finEdu">Egreso</label>
-                    <input type="text" class="form-control" id="finEdu" name="finEdu" [(ngModel)]="finEdu" requiered>
+                    <label for="finEdu"></label>
+                    <input type="text" placeholder="Fecha de egreso" class="form-control" id="finEdu" name="finEdu" [(ngModel)]="finEdu" requiered>
                 </div>
                 <div class="form-group">
-                    <label for="urlImgEdu">url Imagen Institución</label>
-                    <input type="text" class="form-control" id="urlImgEdu" name="urlImgEdu" [(ngModel)]="urlImgEdu" requiered>
+                    <label for="urlImgEdu"></label>
+                    <input type="text" placeholder="URL Imagen Institución" class="form-control" id="urlImgEdu" name="urlImgEdu" [(ngModel)]="urlImgEdu" requiered>
                 </div>
                 <div class="form-group">
-                    <label for="urlEdu">url Institución</label>
-                    <input type="text" class="form-control" id="urlEdu" name="urlEdu" [(ngModel)]="urlEdu" requiered>
+                    <label for="urlEdu"></label>
+                    <input type="text" placeholder="URL Institucional" class="form-control" id="urlEdu" name="urlEdu" [(ngModel)]="urlEdu" requiered>
                 </div>
-                <button class="button">Agregar educación</button>
+                <button class="button">Agregar</button>
             </form>
         </div>
     </div>
